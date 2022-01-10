@@ -1,0 +1,22 @@
+{
+	"name": "DS_input_csvdata_http",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Is_http_github",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/amt66home/ADF/tree/httpfilecopy"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "ds_input_sqlscripts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_github",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"relativegiturl": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativegiturl",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
