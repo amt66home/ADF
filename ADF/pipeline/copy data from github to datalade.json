@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_input_csvdata_http",
+						"referenceName": "ds_csvdata2",
 						"type": "DatasetReference"
 					}
 				],
